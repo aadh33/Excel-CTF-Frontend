@@ -1,0 +1,19 @@
+.navbar__main_body{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 2px solid green;
+}
+.navbar__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.navbar__main_body >img{
+    width: 10rem;
+}
