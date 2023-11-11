@@ -2,18 +2,28 @@
     width: 70%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
     align-items: center;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    border: 2px solid green;
+    /* border: 2px solid green; */
+}
+.and__txt{
+    color: #ffff;
 }
 .navbar__container{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    gap: 1rem;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .navbar__main_body >img{
-    width: 10rem;
+    width: 13rem;
+}
+.presents__txt{
+    color: #ffff;
+    font-size: 2rem;
+    font-family: var(--iconic-text);
+    margin-top: -50px;
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import './MainPage.css'
-import Animation from '../../components/Animation/Animation'
 const MainPage = () => {
   return (
     <div className="main__page_container">
@@ -10,7 +9,6 @@ const MainPage = () => {
         <h2>November 21st to November 23rd</h2>
         </div>
         <button className='reg__btn'>Register</button>
-        <Animation/>
     </div>
   )
 }
