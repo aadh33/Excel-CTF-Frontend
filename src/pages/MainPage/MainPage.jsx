@@ -1,16 +1,25 @@
-import React from 'react'
-import './MainPage.css'
-const MainPage = () => {
-  return (
-    <div className="main__page_container">
-        <div className="main__text_container">
-        <h1 className='evnt__name_quest'>Cyber Quest</h1>
-        <h1 className='evnt__name_quest'>CTF Challenge</h1>
-        <h2>November 21st to November 23rd</h2>
-        </div>
-        <button className='reg__btn'>Register</button>
-    </div>
-  )
-}
+import React from 'react';
+import './MainPage.css';
+import Navbar from '../../components/MainPage/Navbar/Navbar';
+import Animation from '../../components/MainPage/Animation/Animation';
+import Hero from '../../components/MainPage/Hero/Hero';
+import ChallengeFormat from '../../components/MainPage/ChallengeFormat/ChallengeFormat';
+import Prizes from '../../components/MainPage/Prizes/Prizes';
+import FAQ from '../../components/MainPage/FAQ/FAQ';
+import Footer from '../../components/MainPage/Footer/Footer';
 
-export default MainPage
+const MainPage = () => {
+	return (
+		<>
+			<Navbar />
+			<Animation />
+			<Hero />
+			<ChallengeFormat />
+			<Prizes />
+			<FAQ />
+			<Footer />
+		</>
+	);
+};
+
+export default MainPage;
