@@ -1,9 +1,11 @@
+import React from "react";
 import "./RegisterPage.css";
 
-export default function RegisterPage() {
-    return (
-        <div className='register__container'>
-            REGISTER
-        </div>
-    );
-}
+
+const RegisterPage = () => {
+    return <h2>New Page</h2>;
+  };
+  
+  export default RegisterPage;
+
+

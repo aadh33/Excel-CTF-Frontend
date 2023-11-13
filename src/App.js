@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ChallengePage, MainPage, RegisterPage } from './pages';
-import ScrollToTop from './utils/ScrollToTop';
+import  ChallengePage  from './pages/ChallengePage/ChallengePage.jsx';
+import  RegisterPage  from './pages/RegisterPage/RegisterPage.jsx'
+import  MainPage  from './pages/MainPage/MainPage.jsx'
+import ScrollToTop from './utils/ScrollToTop.jsx';
 
 function App() {
   return (
