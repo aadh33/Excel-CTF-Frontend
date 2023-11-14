@@ -1,4 +1,42 @@
+
+
 .challenge__format__container {
     color: #fff;
-    font-family: 'Virgil';
+    font-family:  'virgil';
+    background-color: black; /* Black background */
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.challenge__format__container h2 {
+    color:#74d680; /* Green heading color */
+    font-size: 50px;
+}
+
+
+.challenge__format__container p {
+    margin-bottom: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: justify;
+    font-size: 30px;
+    transition: margin-left 0.5s ease, margin-right 0.5s ease, font-size 0.5s ease;
+}
+
+
+@media screen and (max-width: 768px) {
+    .challenge__format__container p {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1050px) {
+    .challenge__format__container p {
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 25px;
+    }
 }
