@@ -12,8 +12,9 @@ export default function Prizes() {
 	return (
         <div className='prizes__container'>
             <div className="prizes_text_container">
-                Prizes
+               Prizes 
             </div>
+            <div className="prize_box">
             <div className="prize_box_container">
                 <div className="prize_box_container-row1">
                   <div className="prizes_box_prizes prizes_box_prizes_2_container" data-aos = "zoom-in" >
@@ -41,6 +42,7 @@ export default function Prizes() {
                      <div className="prize-3-amount">
                      ₹1000
                      </div>
+                  </div>
                   </div>
                 </div>
             </div>
