@@ -1,3 +1,115 @@
-.prizes__container {
-    color: #fff;
+.prizes__container{
+    width: 100%;
+	min-height: 90vh;
+    flex-direction: column;
+    align-items: center;
+}
+.prizes_text_container{
+    font-family: 'Virgil';
+    color: #74d680;
+    font-size: 80px;
+    margin-left: 630px;
+    margin-bottom: 20px;
+}
+.prize_box_container{
+    flex-direction: row;
+}
+.prizes_box_prizes{
+    width: 250px;
+    margin: 60px;
+    border: 3px solid #74d680;
+    border-radius: 10px;
+}
+.prize_box_container-row1{
+    display: flex;
+    justify-content: center;
+}
+.prize_box_container-row2{
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+}
+.prizes_box_prizes_1_container{
+    height: 330px;
+}
+.prize-1-amount{
+    color: #74d680;
+    font-family: 'Virgil';
+    font-size: 50px;
+    margin-top: 250px;
+    margin-left: 40px;
+}
+.prize-2-amount{
+    color: #74d680;
+    font-family: 'Virgil';
+    font-size: 50px;
+    margin-top: 250px;
+    margin-left: 40px;
+}
+.prize-3-amount{
+    color: #74d680;
+    font-family: 'Virgil';
+    font-size: 50px;
+    margin-top: 250px;
+    margin-left: 40px;
+}
+.prizes_box_prizes_2_container{
+    height: 330px;
+}
+.prizes_box_prizes_3_container{
+    height: 330px;
+    margin-left: 230px;
+}
+.prize_1-img img{
+    width: 10em;
+    position: absolute;
+    margin-left: 48px;
+    margin-top: 35px;
+    height: auto;
+}
+.prize_2-img img{
+    width: 10em;
+    position: absolute;
+    margin-left: 48px;
+    margin-top: 35px;
+    height: auto;
+}
+.prize_3-img img{
+    width: 10em;
+    position: absolute;
+    margin-left: 48px;
+    margin-top: 35px;
+    height: auto;
+}
+@media (max-width: 600px) {
+    .prizes__container{
+        align-items: center;
+    }
+    .prizes_text_container{
+        justify-content: center;
+        margin-left: 140px;
+    }
+    .prizes_box_container {
+        flex-direction: column; 
+        display: inline;
+        justify-content: center;
+    }
+   
+    .prize_box_container-row2{
+        flex-direction: column; 
+        display: inline;
+    }
+    .prizes_box_prizes_1_container{
+        margin-left: 140px;
+        justify-content: center;
+        margin-top: -4px;
+    }
+    .prizes_box_prizes_2_container{
+        margin-left: 110px;
+        justify-content: center;
+        margin-top: -4px;
+    }
+    .prizes_box_prizes_3_container{
+        margin-left: 140px;
+    }
 }
