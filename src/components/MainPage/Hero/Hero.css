@@ -29,6 +29,10 @@
 }
 
 .reg__btn {
+	text-decoration: none;
+	color: black;
+	display: flex;
+	justify-content: center;
 	width: 15rem;
 	padding: 1rem;
 	background-color: var(--primary-color);
