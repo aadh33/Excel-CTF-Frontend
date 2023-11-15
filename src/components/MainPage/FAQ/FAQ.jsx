@@ -29,7 +29,7 @@ const FAQ = () => {
                                 {item.question}
                             </h2>
                             { <div>
-                            {selected == index ? (
+                            {selected === index ? (
                              <> 
                                 <span className="verticle">-</span>
                              </>
