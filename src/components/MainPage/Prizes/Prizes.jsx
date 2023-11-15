@@ -11,39 +11,35 @@ export default function Prizes() {
     }, []);
 	return (
         <div className='prizes__container'>
-            <div className="prizes_text_container">
-                Prizes
-            </div>
-            <div className="prize_box_container">
-                <div className="prize_box_container-row1">
-                  <div className="prizes_box_prizes prizes_box_prizes_2_container" data-aos = "zoom-in" >
-                     <div className="prize_1-img">
-                      <img src={prize1} alt="prize1"/>
-                     </div>
-                     <div className="prize-1-amount">
-                     ₹2500
-                     </div>
-                  </div>
+			<h2 className='prizes_text_container'>Prizes</h2>
+                <div className='prize_box_container prize_1'>
+                    <div className='prizes' data-aos = "zoom-in" >
+                    <div className="prize_img">
+                        <img src={prize1} alt="prize1"/>
+                    </div>
+                    <div className="prize-amount">
+                        ₹2500
+                    </div>
+                    </div>
                 </div>
-                <div className="prize_box_container-row2">
-                  <div className="prizes_box_prizes prizes_box_prizes_1_container" data-aos = "fade-right">
-                  <div className="prize_2-img">
-                      <img src={prize2} alt="prize2"/>
-                     </div>
-                     <div className="prize-2-amount">
-                     ₹1500
-                     </div>
-                  </div>
-                  <div className="prizes_box_prizes prizes_box_prizes_3_container" data-aos = "fade-left">
-                  <div className="prize_3-img">
-                      <img src={prize3} alt="prize3"/>
-                     </div>
-                     <div className="prize-3-amount">
-                     ₹1000
-                     </div>
-                  </div>
+                <div className='prize_box_container'>
+                    <div className='prizes' data-aos = "fade-right"  >
+                    <div className="prize_img">
+                        <img src={prize2} alt="prize2"/>
+                    </div>
+                    <div className="prize-amount">
+                        ₹1500
+                    </div>
+                    </div>
+                    <div className='prizes' data-aos = "fade-left">
+                        <div className="prize_img">
+                        <img src={prize3} alt="prize3"/>
+                        </div>
+                        <div className="prize-amount">
+                            ₹1000
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
     );
-}
+    }
