@@ -1,161 +1,94 @@
-.prizes__container{
-    width: 100%;
-	height: 800;
+/* General styles */
+.prizes__container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-.prizes_text_container{
-    font-family: 'Virgil';
-    font-size: 80px;
-    padding: 10px 0;
-    text-align: center;
-    
     color: #74d680;
 }
-.prize_box{
-    flex-direction: row;
-    display: flex;
-}
-.prize_box_container{
-    flex-direction: row;
-}
-.prize_box_container-row1{
-    display: flex;
-    justify-content: center;
+
+.prizes_text_container {
+    font-family: 'Virgil';
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 
-.prizes_box_prizes{
-    width: 300px;
-    margin: 60px;
+.prize_box_container {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.prizes {
+    width: 100%;
+    max-width: 300px; /* Set a maximum width for responsiveness */
+    height: 280px;
     border: 3px solid #74d680;
+    margin-bottom: 10px;
+    position: relative;
     border-radius: 10px;
-}
-.prize_box_container-row2{
     display: flex;
-    justify-content: center;
-    margin-top: -70px;
+    flex-direction: column; 
+}
 
+.prize_1 {
+    /* order: -1; Move the prize_1 box to the top */
+    justify-content: center;
 }
-.prizes_box_prizes_1_container{
-    height: 330px;
+
+.prizes:hover {
+    transform: scale(1.05);
 }
-.prize-1-amount{
+
+/* Image styles */
+.prize_img {
+    position: relative;
+}
+
+.prize_img img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 25%;
+    margin-top: 6%;
+}
+
+/* Prize amount styles */
+.prize-amount {
+    font-weight: bold;
     color: #74d680;
     font-family: 'Virgil';
-    font-size: 50px;
-    margin-top: 250px;
-    margin-left: 60px;
-}
-.prize-2-amount{
-    color: #74d680;
-    font-family: 'Virgil';
-    font-size: 50px;
-    margin-top: 250px;
-    margin-left: 60px;
-}
-.prize-3-amount{
-    color: #74d680;
-    font-family: 'Virgil';
-    font-size: 50px;
-    margin-top: 250px;
-    margin-left: 60px;
-}
-.prizes_box_prizes_2_container{
-    height: 330px;
-    margin-top: -5px;
-}
-.prizes_box_prizes_3_container{
-    height: 330px;
-    margin-left: 230px;
-}
-.prize_1-img img{
-    width: 10em;
+    font-size: 40px;
     position: absolute;
-    margin-left: 60px;
-    margin-top: 35px;
-    height: auto;
+    bottom: 15px;
+    left: 25%;
 }
-.prize_2-img img{
-    width: 10em;
-    position: absolute;
-    margin-left: 60px;
-    margin-top: 35px;
-    height: auto;
-}
-.prize_3-img img{
-    width: 10em;
-    position: absolute;
-    margin-left: 60px;
-    margin-top: 35px;
-    height: auto;
-}
-@media (max-width: 760px) {
-    .prizes__container{
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .prize_box_container {
+        flex-direction: column;
         align-items: center;
     }
-    .prizes_text_container{
-        text-align: center;
-        margin-right: 10px;
+
+    .prizes {
+        max-width: none;
     }
-    .prizes_box_container {
-        flex-direction: column; 
-        display: inline;
-        justify-content: center;
+
+    /* .prize_1 {
+        order: -2; Move the prize_1 box to the second position in mobile view
+    } */
+
+    .prize_img img {
+        margin-left: 25%;
+        margin-top: 8%;
     }
-   
-    .prize_box_container-row2{
-        flex-direction: column; 
-        display: inline;
-    }
-    .prizes_box_prizes_1_container{
-        justify-content: center;
-        margin-top: -4px;
-    }
-    .prizes_box_prizes_2_container{
-        margin-left: 50px;
-        justify-content: center;
-        margin-top: -4px;
-    }
-    .prizes_box_prizes_3_container{
-        margin-left: 140px;
-    }
-}
-@media (max-width: 400px) {
-    .prizes__container{
-        align-items: center;
-    }
-    
-    .prizes_box_container{
-        width: 100px;
-    }
-    .prizes_box_prizes_2_container{
-        margin-left: 60px;
-        width: 230px;
-    }
-    .prize_1-img img{
-        margin-left: 30px;
-    }
-    .prize-1-amount{
-        margin-left: 30px;
-    }
-    .prizes_box_prizes_1_container{
-        margin-left: 50px;
-        width: 230px;
-    }
-    .prize_2-img img{
-        margin-left: 35px;
-    }
-    .prize-1-amount{
-        margin-left: 40px;
-    }
-    .prizes_box_prizes_3_container{
-        margin-left: 60px;
-        width: 230px;
-    }
-    .prize_3-img img{
-        margin-left: 35px;
-    }
-    .prize-3-amount{
-        margin-left: 40px;
+
+    .prize-amount {
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
